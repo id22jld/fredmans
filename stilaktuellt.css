@@ -1,0 +1,53 @@
+
+section {
+    margin: 3%;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+.video {
+    padding-top: 40px;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+  }
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+}
+
+h2 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400; 
+    font-size: 36px;
+}
+
+h3 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}

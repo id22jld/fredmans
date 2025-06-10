@@ -1,0 +1,133 @@
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    max-width: 1400px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.middle-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: clamp(100px, 9.5vw, 165px);
+    padding-bottom: 30px;
+}
+
+.bottom-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: clamp(100px, 9.5vw, 165px);
+    border-top: 2px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    .middle-row,
+    .bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+  }
+
+.kassawrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 7%;
+}
+
+.kassan {
+    background-color: #B8CBD3;
+    padding: 7px 40px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.item img {
+    width: clamp(100px, 9.5vw, 165px);
+    height: auto;
+}
+
+h2 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400; 
+    font-size: clamp(28px, 2.7vw, 44px);
+}
+
+h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400; 
+    font-size: clamp(16px, 1.5vw, 24px);
+    margin: 0;
+}
+
+h4 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: clamp(20px, 1.8vw, 28px);
+    margin: 0;
+}
+
+h5 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 1.8vw, 28px);
+    margin: 0;
+}
+
+@media print {
+    .kassawrap {
+    display: none;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item h4 {
+        display: flex;
+        justify-content: end;
+    }
+
+    .middle-row,
+    .bottom-row {
+        padding-left: 0;
+    }
+  
+    h2{
+        font-size: 27pt;
+    }
+
+    h3, h4, h5 {
+        font-size: 16pt;
+    }
+  
+    .item img {
+        max-width: 100%;
+        height: auto;
+    }
+  
+    body {
+        margin: 1cm;
+    }
+  
+}
