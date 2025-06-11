@@ -96,7 +96,7 @@
 
 .add-cart i {
     font-size: clamp(27px, 2.6vw, 44px);
-  }
+}
 
 .add-cart {
     display: flex;
