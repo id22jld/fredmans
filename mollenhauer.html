@@ -17,6 +17,10 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
 
+  <script src="header.js" defer></script>
+  <script src="jqheader.js" defer></script>
+  <script src="animate.js"></script>
+
 </head>
 <body>
 
@@ -32,52 +36,51 @@
     </label>
 
     <ul class="menylista">        
-      <li><a href="paket.html">Paket</a></li>
+      <li><a href="paket.html" class="menyrad">Paket</a></li>
       <li>
-        <input type="checkbox" id="plast" hidden>
-        <label for="plast" class="dropdown-titel">
-          <span class="dropdown-wrap">
+        <button class="dropdown-titel menyrad">
+        <span class="dropdown-wrap">
             <span>Plastblockflöjter</span>
             <span class="pil"></span>
           </span>
+        </button>
         </label>
         <ul class="submenu">
-          <li><a href="yamaha.html">Yamaha</a></li>
-          <li><a href="aulos.html">Aulos</a></li>
-          <li><a href="angel.html">Angel</a></li>
+          <li><a href="yamaha.html" class="menyrad">Yamaha</a></li>
+          <li><a href="aulos.html" class="menyrad">Aulos</a></li>
+          <li><a href="angel.html" class="menyrad">Angel</a></li>
         </ul>
       </li>
       <li>
-        <input type="checkbox" id="trä" hidden>
-        <label for="trä" class="dropdown-titel">
+        <button class="dropdown-titel menyrad">
           <span class="dropdown-wrap">
             <span>Träblockflöjter</span> 
             <span class="pil"></span>
           </span>
-        </label>
+        </button>
         <ul class="submenu">
-          <li><a href="mollenhauer.html">Mollenhauer</a></li>
-          <li><a href="moeck.html">Moeck</a></li>
-          <li><a href="küng.html">Küng</a></li>
+          <li><a href="mollenhauer.html" class="menyrad">Mollenhauer</a></li>
+          <li><a href="moeck.html" class="menyrad">Moeck</a></li>
+          <li><a href="küng.html" class="menyrad">Küng</a></li>
         </ul>
       </li>
-      <li><a href="renässansblockflöjter.html">Renässansblockflöjter</a></li>
+      <li><a href="renässansblockflöjter.html" class="menyrad">Renässansblockflöjter</a></li>
       <li>
-        <input type="checkbox" id="tillbehör" hidden>
-        <label for="tillbehör" class="dropdown-titel">
+        <button class="dropdown-titel menyrad">
           <span class="dropdown-wrap">
             <span>Tillbehör</span>
             <span class="pil"></span>
           </span>
-        </label>
+        </button>
         <ul class="submenu">
-          <li><a href="skötsel.html">Skötsel</a></li>
-          <li><a href="noter.html">Noter</a></li>
-          <li><a href="väskor.html">Väskor</a></li>
-          <li><a href="övriga-tillbehör.html">Övriga tillbehör</a></li>
+          <li><a href="skötsel.html" class="menyrad">Skötsel</a></li>
+          <li><a href="noter.html" class="menyrad">Noter</a></li>
+          <li><a href="väskor.html" class="menyrad">Väskor</a></li>
+          <li><a href="övriga-tillbehör.html" class="menyrad">Övriga tillbehör</a></li>
         </ul>
       </li>
-      <li><a href="mungiga-och-duduk.html">Mungiga och duduk</a></li>
+      <li><a href="mungiga-och-duduk.html" class="menyrad">Mungiga och duduk</a></li>
+      <script src="menuhover.js"></script>
     </ul>
     
     <div class="head">

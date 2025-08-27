@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function hoverAnmiation() {
   $(".link").hover(
     function() {
       $(this).stop().animate(
@@ -27,4 +27,6 @@ $(document).ready(function() {
       );
     }
   );
-});
+}
+
+$(document).ready(hoverAnmiation);
