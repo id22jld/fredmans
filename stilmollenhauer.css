@@ -87,7 +87,7 @@
     height: auto;
 }
 
-.link {
+.link a {
     background-color: #B8CBD3;
     padding: 20px;
     display: flex;
@@ -110,7 +110,7 @@ h2 {
 h3 {
     font-family: "Barlow", sans-serif;
     font-weight: 300;
-    font-size: clamp(20px, 1.8vw, 28px);
+    font-size: clamp(24px, 2vw, 32px);
 }
 
 h4 {

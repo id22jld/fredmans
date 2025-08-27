@@ -51,7 +51,17 @@ header {
   list-style: none;
   padding: 10px;
   z-index: 10;
+}
 
+.menyrad {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menyrad.hover-meny {
+  background-color: #a0b6c0;
+  display: block;
 }
 
 #meny-box:checked + label + .menylista {
@@ -59,8 +69,15 @@ header {
 }
 
 .dropdown-titel {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
   cursor: pointer;
   display: block;
+  width: 100%;
+  text-align: left; /* gör så texten inte hamnar i mitten */
 }
 
 .submenu {
@@ -82,27 +99,7 @@ header {
   border-top: 8px solid #59686F;
 }
 
-#plast:checked + .dropdown-titel + .submenu {
-  display: block;
-}
-
-#plast:checked + label .pil {
-  transform: rotate(180deg);
-}
-
-#trä:checked + .dropdown-titel + .submenu {
-  display: block;
-}
-
-#trä:checked + label .pil {
-  transform: rotate(180deg);
-}
-
-#tillbehör:checked + .dropdown-titel + .submenu {
-  display: block;
-}
-
-#tillbehör:checked + label .pil {
+.pil.rotate {
   transform: rotate(180deg);
 }
 
@@ -139,6 +136,11 @@ header {
   text-align: center;
 }
 
+.search.focused {
+  border-color: #B8CBD3;
+  background-color: #FBFBFB;
+}
+
 nav {
   display: flex;
   flex-direction: row; 
@@ -165,11 +167,16 @@ h1 {
   font-weight: 400;
   font-size: clamp(20px, 1.8vw, 28px);
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 .menylista li a {
   text-decoration: none;
   color: black;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
